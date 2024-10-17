@@ -1,0 +1,24 @@
+'''
+5) Write a program to print the values which are similar in both given sets.
+Sample Input:
+1 2 3 4
+2 4 6 8
+Sample Output:
+2 4 
+Note: Trailing spaces are there at the end of the output.
+6)
+'''
+# Get the first set of values from the user
+input_values1 = input("Enter the first set of values separated by space: ")
+set1 = set(map(int, input_values1.split()))
+
+# Get the second set of values from the user
+input_values2 = input("Enter the second set of values separated by space: ")
+set2 = set(map(int, input_values2.split()))
+
+# Find the intersection of the two sets (common values)
+common_values = set1.intersection(set2)
+
+# Sort the common values and print them with a trailing space
+sorted_common_values = sorted(common_values)
+print(" ".join(map(str, sorted_common_values)) + " ")
