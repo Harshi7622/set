@@ -1,0 +1,19 @@
+'''
+6)
+Write a program to get the set values in a single line separated by space (including duplicate values) and print the number of elements in the given set.
+Sample Input:
+1 2 3 4 5 1 2 3
+Sample Output:
+5
+'''
+# Get the set values from the user in a single line
+input_values = input("Enter the set values separated by space (including duplicates): ")
+
+# Convert input to a set of integers to remove duplicates
+values_set = set(map(int, input_values.split()))
+
+# Get the number of unique elements in the set
+num_elements = len(values_set)
+
+# Print the number of unique elements
+print(num_elements)
